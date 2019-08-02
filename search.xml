@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[HEXO 尝试]]></title>
-    <url>%2F2019%2F07%2F31%2FHEXO-%E5%B0%9D%E8%AF%95%2F</url>
-    <content type="text"><![CDATA[[TOC] Guide这是一篇讲解如何正确使用 Markdown 的排版示例，学会这个很有必要，能让你的文章有更佳清晰的排版。 引用文本：Markdown is a text formatting syntax inspired 语法指导普通内容这段内容展示了在内容里面一些小的格式，比如： 加粗 - **加粗** 倾斜 - *倾斜* 删除线 - ~~删除线~~ Code 标记 - Code 标记 超级链接 - [超级链接](http://github.com) username@gmail.com - [username@gmail.com](mailto:username@gmail.com) 提及用户@foo @bar @someone … 通过 @ 可以在发帖和回帖里面提及用户，信息提交以后，被提及的用户将会收到系统通知。以便让他来关注这个帖子或回帖。 表情符号 Emoji支持表情符号，你可以用系统默认的 Emoji 符号（无法支持 Windows 用户）。也可以用图片的表情，输入 : 将会出现智能提示。 一些表情例子:smile: :laughing: :dizzy_face: :sob: :cold_sweat: :sweat_smile: :cry: :triumph: :heart_eyes: :relaxed: :sunglasses: :weary: :+1: :-1: :100: :clap: :bell: :gift: :question: :bomb: :heart: :coffee: :cyclone: :bow: :kiss: :pray: :sweat_drops: :hankey: :exclamation: :anger: 大标题 - Heading 3你可以选择使用 H2 至 H6，使用 ##(N) 打头，H1 不能使用，会自动转换成 H2。 NOTE: 别忘了 # 后面需要有空格！ Heading 4Heading 5Heading 6图片12345![alt 文本](http://image-path.png)![alt 文本](http://image-path.png &quot;图片 Title 值&quot;)![设置图片宽度高度](http://image-path.png =300x200)![设置图片宽度](http://image-path.png =300x)![设置图片高度](http://image-path.png =x200) 代码块普通123*emphasize* **strong**_emphasize_ __strong__@a = 1 语法高亮支持如果在 123456789##### 演示 Ruby 代码高亮```rubyclass PostController &lt; ApplicationController def index @posts = Post.last_actived.limit(10) endend 演示 Rails View 高亮123&lt;%= @posts.each do |post| %&gt;&lt;div class="post"&gt;&lt;/div&gt;&lt;% end %&gt; 演示 YAML 文件123zh-CN: name: 姓名 age: 年龄 Tip: 语言名称支持下面这些: ruby, python, js, html, erb, css, coffee, bash, json, yml, xml … 有序、无序列表无序列表 Ruby Rails ActiveRecord Go Gofmt Revel Node.js Koa Express 有序列表 Node.js Express Koa Sails Ruby Rails Sinatra Go 表格如果需要展示数据什么的，可以选择使用表格哦 header 1 header 3 cell 1 cell 2 cell 3 cell 4 cell 5 cell 6 段落留空白的换行，将会被自动转换成一个段落，会有一定的段落间距，便于阅读。 请注意后面 Markdown 源代码的换行留空情况。 视频插入目前支持 Youtube 和 Youku 两家的视频插入，你只需要复制视频播放页面，浏览器地址栏的网页 URL 地址，并粘贴到话题／回复文本框，提交以后将自动转换成视频播放器。 例如Youtube https://www.youtube.com/watch?v=CvVvwh3BRq8 Vimeo https://vimeo.com/199770305 Youku http://v.youku.com/v_show/id_XMjQzMTY1MDk3Ng==.html]]></content>
+    <title><![CDATA[SparkML源码分析]]></title>
+    <url>%2F2019%2F08%2F01%2FSparkML%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90%2F</url>
+    <content type="text"><![CDATA[前言 Spark Version: 2.2 一、 基本介绍二、 官方案例三、 拓展案例总结参考文献]]></content>
+      <categories>
+        <category>BigData</category>
+        <category>Spark</category>
+      </categories>
       <tags>
-        <tag>Tech</tag>
+        <tag>BigData</tag>
+        <tag>Spark</tag>
+        <tag>ML</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F07%2F31%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[文本标注工具]]></title>
+    <url>%2F2019%2F08%2F01%2F%E6%96%87%E6%9C%AC%E6%A0%87%E6%B3%A8%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$f(x) = 3x + 7$$a = b + c$$$\frac{\partial u}{\partial t}= h^2 \left( \frac{\partial^2 u}{\partial x^2} +\frac{\partial^2 u}{\partial y^2} +\frac{\partial^2 u}{\partial z^2}\right)$$ 自然语言处理的大部分任务是监督学习问题。序列标注问题如中文分词、命名实体识别，分类问题如关系识别、情感分析、意图分析等，均需要标注数据进行模型训练。 一、 为什么使用文本标注工具？ 传统人工标注数据的过程往往是繁琐和低效率的； 标注过程背后含有智能算法，将人工重复劳动降到最低； 标注界面显而易见地友好，让标注操作尽可能简便和符合直觉。 二、 标注工具都有哪些？2.1 IEPY 代码：https://github.com/machinalis/iepy 说明：http://iepy.readthedocs.io/en/latest/index.html 2.2 DeepDive (Mindtagger) 介绍：http://deepdive.stanford.edu/labeling 前端代码：https://github.com/HazyResearch/mindbende 将 DeepDive 的 corenlp 部分转为支持中文的代码尝试： https://github.com/SongRb/DeepDiveChineseApps https://github.com/qiangsiwei/DeepDive_Chinese https://github.com/mcavdar/deepdive/commit/6882178cbd38a5bbbf4eee8b76b1e215537425b2 2.3 BRAT 介绍：http://brat.nlplab.org/index.html 在线试用：http://weaver.nlplab.org/~brat/demo/latest/#/ 代码：https://github.com/nlplab/brat 2.4 SUTDAnnotator用的不是网页前端而是 pythonGUI，但比较轻量。 代码：https://github.com/jiesutd/SUTDAnnotator Paper：https://github.com/jiesutd/SUTDAnnotator/blob/master/lrec2018.pdf 2.5 Snorkel Page: https://hazyresearch.github.io/snorkel/ Github: https://github.com/HazyResearch/snorkel Demo Paper: https://hazyresearch.github.io/snorkel/pdfs/snorkel_demo.pdf 2.6 Slate Code: https://bitbucket.org/dainkaplan/slate/ Paper: http://www.jlcl.org/2011_Heft2/11.pdf 2.7 Prodigy和著名的 spacy 是一家做的。 Website: https://prodi.gy/docs/ Blog: https://explosion.ai/blog/prodigy-annotation-tool-active-learning Prodigy 文档：https://prodi.gy/docs/ Prodigy demo：https://prodi.gy/demo 2.8 中文文本标注工具 Chinese-Annotator开发中：招募 程序架构程序框架开发，与前后端及算法模块紧密沟通，定义函数功能，规范接口和参数。 我们希望参考rasa_nlu的用户配置设计将通用算法模块和用户数据隔离开，同时参考iepy的前后端设计和算法尤其是 active learning 部分的设计。 前后端开发前端使用 vue+flask 构架全栈开发，完成 web 用户中文文本标注的动态交互。后端业务逻辑支撑和可扩展的数据持久化。 NLP 算法模块开发传统 NLP 特征工程，传统分类（SVM）和序列标注（CRF,HMM）算法开发，深度学习 NLP 的分类和序列标注算法开发。online 及 offline 算法优化，以及接口 API 开发。 Python工程师Python代码开发。]]></content>
+      <categories>
+        <category>NLP</category>
+      </categories>
+      <tags>
+        <tag>NLP</tag>
+        <tag>Tag tools</tag>
+      </tags>
   </entry>
 </search>
